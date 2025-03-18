@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "866757867607",
+    "project_id": "kunaproject-firebase",
+    "storage_bucket": "kunaproject-firebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866757867607:android:9570a341034c9e995dcb12",
+        "android_client_info": {
+          "package_name": "com.example.kunaproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaJ1nFadyto-arT0KnpivslD6CmwNDYqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
