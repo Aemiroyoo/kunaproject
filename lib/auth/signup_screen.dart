@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:kunaproject/login/login_screen.dart';
+import 'package:kunaproject/utils.dart';
 import 'auth_service.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -42,16 +43,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 String password = passwordController.text.trim();
 
                 if (email.isEmpty || password.isEmpty) {
-                  setState(() {
-                    errorMessage = "Email dan Password tidak boleh kosong.";
-                  });
+                  showToast("Email dan Password tidak boleh kosong.");
                   return;
                 }
 
                 if (password.length < 6) {
-                  setState(() {
-                    errorMessage = "Password harus minimal 6 karakter.";
-                  });
+                  showToast("Password harus minimal 6 karakter.");
                   return;
                 }
 
@@ -61,15 +58,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 );
 
                 if (error == null) {
-                  // Jika sukses, arahkan ke halaman login
+                  showToast(
+                    "Registrasi berhasil! Silakan login.",
+                    backgroundColor: Colors.green,
+                  );
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => LoginScreen()),
                   );
                 } else {
-                  setState(() {
-                    errorMessage = error;
-                  });
+                  showToast(error); // Warna merah default untuk error
                 }
               },
               child: Text("Sign Up"),

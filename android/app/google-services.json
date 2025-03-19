@@ -12,7 +12,20 @@
           "package_name": "com.example.kunaproject"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "866757867607-g965jns41bkt9kgb2h3q91paob9dtvgc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kunaproject",
+            "certificate_hash": "1276dd26313ebe1e73dbf3cb304f5bb21134cb24"
+          }
+        },
+        {
+          "client_id": "866757867607-ltdou15mpor920hf467ljub9c0alanjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDaJ1nFadyto-arT0KnpivslD6CmwNDYqo"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866757867607-ltdou15mpor920hf467ljub9c0alanjk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
